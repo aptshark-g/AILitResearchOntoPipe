@@ -1,0 +1,56 @@
+[
+  {
+    "node_id": "meta-1",
+    "name": "Double-Loop Learning",
+    "level": 0,
+    "category": "meta-learning",
+    "description": "Argyris & Schön: single-loop modifies parameters within a fixed framework; double-loop modifies the framework itself. A control system tuning its gains is single-loop; realizing that the entire controller architecture is wrong is double-loop. The transition is governed by the unexplainability threshold: when accumulated anomalies exceed the framework's predictive capacity, the governing assumptions must be questioned.",
+    "aliases": ["single-loop", "double-loop", "framework revision", "paradigm shift"],
+    "keywords": ["single-loop", "double-loop", "framework", "assumption", "anomaly", "unexplainability"]
+  },
+  {
+    "node_id": "meta-2",
+    "name": "Association & Causation Theory",
+    "level": 0,
+    "category": "meta-rule",
+    "description": "Association (correlation) is undirected and symmetric: A and B co-occur. Causation is directed and asymmetric: A produces B. The gap is bridged by four constraints: temporal ordering, mechanism chain, intervention validation, and boundary condition satisfaction. Without all four, the edge remains associative with a decaying confidence. Tending toward chaos theory: in nonlinear systems, local causality can break down under sensitive dependence on initial conditions.",
+    "aliases": ["correlation", "causation", "causal inference", "intervention"],
+    "keywords": ["association", "causation", "correlation", "intervention", "boundary", "temporal", "mechanism"]
+  },
+  {
+    "node_id": "meta-3",
+    "name": "Dimensionality Reduction & Information Constraint",
+    "level": 0,
+    "category": "meta-theory",
+    "description": "Any representation of a system with fewer degrees of freedom than the original is a form of compression. This is not merely neural network distillation; it is the fundamental operation of science itself: from PDE to ODE, from many-body to mean-field, from high-dimensional data to low-dimensional manifold. The constraint is the loss function: what information is deemed essential and what is discarded. This is an epistemic choice, not just a technical one.",
+    "aliases": ["dimensionality reduction", "compression", "manifold", "coarse-graining"],
+    "keywords": ["dimensionality", "reduction", "compression", "manifold", "coarse-graining", "information"]
+  },
+  {
+    "node_id": "meta-4",
+    "name": "Convergence & Stability Theory",
+    "level": 0,
+    "category": "meta-theory",
+    "description": "Not specific to control systems. Any iterative process—gradient descent, belief propagation, phase transition, ecological succession—must satisfy: (1) a Lyapunov-like function that decreases monotonically, (2) a basin of attraction that prevents divergence to infinity, (3) a rate of convergence that is finite and preferably bounded. The mathematics is the same whether the system is a neural network, a crystal lattice, or a predator-prey ecosystem.",
+    "aliases": ["convergence", "stability", "Lyapunov", "basin of attraction"],
+    "keywords": ["convergence", "stability", "Lyapunov", "attractor", "basin", "iterative"]
+  },
+  {
+    "node_id": "meta-5",
+    "name": "Hierarchy & Emergence",
+    "level": 0,
+    "category": "meta-theory",
+    "description": "Complex systems organize into layers where each layer's behavior is not reducible to the layer below. Thermodynamics emerges from statistical mechanics; fluid dynamics from molecular collisions; control performance from hardware physics. The key is the separation of timescales: fast processes (vibration, thermal diffusion) are treated as constraints on slow processes (structural deformation, tool wear). This is the foundation of multiscale modeling and hierarchical control.",
+    "aliases": ["hierarchy", "emergence", "multiscale", "timescale separation"],
+    "keywords": ["hierarchy", "emergence", "multiscale", "timescale", "coarse-graining", "layer"]
+  },
+  {
+    "node_id": "meta-6",
+    "name": "Epistemic Boundary & Unexplainability",
+    "level": 0,
+    "category": "meta-parameter",
+    "description": "The threshold beyond which a system's behavior cannot be predicted by its current model. This is not ignorance; it is a formal boundary. In control: the unmodeled dynamics. In materials: the defect-dominated regime. In chemistry: the reaction pathway bifurcation. When unexplainability exceeds the threshold, the model must be expanded or replaced. The chaos suppression parameter: if a proposed framework change affects >30% of the knowledge graph, auto-revert to conservative single-loop.",
+    "aliases": ["epistemic boundary", "unexplainability", "threshold", "model limit"],
+    "keywords": ["epistemic", "boundary", "unexplainability", "threshold", "model", "bifurcation"]
+  }
+]

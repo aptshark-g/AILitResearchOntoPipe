@@ -1,0 +1,74 @@
+[
+  {
+    "node_id": "phys-1",
+    "name": "Mechanical Oscillation & Wave Dynamics",
+    "level": 4,
+    "category": "physics",
+    "description": "The periodic motion of mechanical systems governed by inertia, restoring force, and dissipation. Newton's second law: m*x_ddot + c*x_dot + k*x = F(t). Modal decomposition splits multi-degree systems into independent single-degree modes. Resonance occurs when excitation frequency matches natural frequency. Damping ratio zeta determines decay rate and bandwidth. In continuous media, this becomes the wave equation: the foundation of acoustics, seismology, and structural dynamics. The same mathematics applies to electrical LC circuits, optical resonators, and quantum harmonic oscillators.",
+    "aliases": ["vibration", "oscillation", "wave", "modal", "resonance", "damping"],
+    "keywords": ["vibration", "oscillation", "wave", "modal", "resonance", "damping", "natural frequency"]
+  },
+  {
+    "node_id": "phys-2",
+    "name": "Thermal Transport & Thermodynamics",
+    "level": 4,
+    "category": "physics",
+    "description": "Heat transfer by conduction (Fourier's law), convection (Newton's law), and radiation (Stefan-Boltzmann). Thermal expansion: delta_L = alpha * L * delta_T. The heat equation is a parabolic PDE; the wave equation is hyperbolic. In machine tools, thermal error dominates positioning inaccuracy. In electronics, junction temperature limits performance. In materials, thermal cycling causes fatigue. Thermodynamics: first law (energy conservation), second law (entropy increase), third law (absolute zero unattainable). The Carnot efficiency sets the limit on heat engines.",
+    "aliases": ["thermal", "heat transfer", "conduction", "convection", "thermodynamics"],
+    "keywords": ["thermal", "heat", "conduction", "convection", "radiation", "expansion", "entropy", "Carnot"]
+  },
+  {
+    "node_id": "phys-3",
+    "name": "Electromagnetic Coupling & Field Theory",
+    "level": 4,
+    "category": "physics",
+    "description": "Maxwell's equations govern all electromagnetic phenomena. In the quasi-static limit (frequencies much lower than optical), these reduce to circuit theory (Kirchhoff's laws) and electrostatics (Poisson's equation). Piezoelectricity is a coupled electromechanical effect: strain generates charge and vice versa. Capacitive and inductive coupling dominate at high frequencies. Electromagnetic interference (EMI) is the unwanted coupling between circuits. In materials, the dielectric constant and magnetic permeability determine the field response. In biology, ion channels are electrochemical transducers.",
+    "aliases": ["electromagnetic", "Maxwell", "piezoelectric", "capacitive", "inductive"],
+    "keywords": ["electromagnetic", "Maxwell", "piezoelectric", "capacitive", "inductive", "EMI", "dielectric"]
+  },
+  {
+    "node_id": "phys-4",
+    "name": "Material Response & Constitutive Relations",
+    "level": 4,
+    "category": "physics",
+    "description": "The relationship between applied stress and resulting strain: stress = C * strain, where C is the stiffness tensor. For isotropic materials, this reduces to two parameters: Young's modulus E and Poisson's ratio nu. Nonlinear constitutive relations: plasticity (yield stress), viscoelasticity (time-dependent response), hyperelasticity (rubber-like). Damage mechanics: microcracks reduce effective stiffness. In composites, the rule of mixtures predicts macroscopic properties from constituent properties. In granular materials, the effective modulus depends on packing density and contact forces. All materials are approximations; the constitutive relation is a model.",
+    "aliases": ["constitutive", "stress-strain", "Young modulus", "plasticity", "viscoelasticity"],
+    "keywords": ["constitutive", "stress", "strain", "Young", "plasticity", "viscoelasticity", "damage"]
+  },
+  {
+    "node_id": "phys-5",
+    "name": "Signal & Noise Floor",
+    "level": 4,
+    "category": "physics",
+    "description": "The fundamental limit of any measurement: the signal must exceed the noise by a sufficient margin to be detectable. SNR = 20*log10(A_signal/A_noise). In electronics: thermal noise (Johnson-Nyquist), shot noise (Poisson), flicker noise (1/f). In optics: photon shot noise. In mechanics: sensor resonance and mounting noise. In control: the sensor noise floor limits the achievable disturbance rejection. The dB scale is logarithmic: 6 dB = 2x amplitude, 20 dB = 10x amplitude, 40 dB = 100x amplitude. The ultimate limit is quantum mechanical: the uncertainty principle sets a floor on simultaneous position and momentum measurement.",
+    "aliases": ["SNR", "noise", "thermal noise", "shot noise", "quantum limit"],
+    "keywords": ["SNR", "noise", "thermal", "shot", "flicker", "quantum", "dB", "amplitude"]
+  },
+  {
+    "node_id": "phys-6",
+    "name": "Spatiotemporal Delay & Causal Boundary",
+    "level": 4,
+    "category": "physics",
+    "description": "No information can travel faster than the speed of light in vacuum. In practice, signals travel at the speed of sound in the medium (electromagnetic waves in copper: ~2/3 c; mechanical waves in steel: ~5000 m/s). This creates a finite propagation delay that limits the bandwidth of any feedback loop. In control, the phase lag from delay reduces stability margins. In networks, latency determines throughput. In materials, thermal diffusion has a characteristic time scale: L^2 / alpha, where alpha is thermal diffusivity. The causal boundary is the light cone: events outside it cannot influence each other.",
+    "aliases": ["delay", "latency", "propagation", "causal boundary", "light cone"],
+    "keywords": ["delay", "latency", "propagation", "causal", "light cone", "phase lag", "diffusivity"]
+  },
+  {
+    "node_id": "phys-7",
+    "name": "Phase Transition & Critical Phenomena",
+    "level": 4,
+    "category": "physics",
+    "description": "A sudden change in the macroscopic properties of a system when a control parameter crosses a threshold. Examples: melting (solid to liquid), magnetization (ferromagnetic to paramagnetic), superconductivity (normal to superconducting). Near the critical point, fluctuations diverge, correlation length diverges, and the system becomes scale-invariant (fractal). Critical exponents are universal: they depend only on dimensionality and symmetry, not on microscopic details. In control, a bifurcation is a phase transition: the system changes from stable to unstable. In materials, the glass transition is a critical phenomenon. In ecology, population collapse is a critical transition.",
+    "aliases": ["phase transition", "critical", "bifurcation", "critical exponent", "universality"],
+    "keywords": ["phase", "transition", "critical", "bifurcation", "exponent", "universality", "fluctuation"]
+  },
+  {
+    "node_id": "phys-8",
+    "name": "Structural Stability & Failure",
+    "level": 4,
+    "category": "physics",
+    "description": "The capacity of a structure to maintain its integrity under load. Elastic stability: buckling (Euler buckling for columns). Plastic stability: yield and fracture (von Mises criterion, maximum principal stress). Fatigue: failure under cyclic loading below the static yield stress (Paris law for crack growth). Creep: time-dependent deformation under constant load. In materials, the Weibull distribution models brittle fracture statistics. In control, structural stability means the system remains stable under parameter perturbations. In biology, homeostasis is structural stability of the physiological state. All failure is a transition from one stable state to another, less desirable one.",
+    "aliases": ["buckling", "fracture", "fatigue", "creep", "yield", "structural stability"],
+    "keywords": ["buckling", "fracture", "fatigue", "creep", "yield", "Weibull", "homeostasis"]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "node_id": "math-1",
+    "name": "Function Approximation & Representation",
+    "level": 2,
+    "category": "math",
+    "description": "The core task of representing an unknown function f(x) by a constructible approximation f_hat(x). Basis: Taylor series, Fourier series, orthogonal polynomials, radial basis functions, splines, neural networks. The universal approximation theorem states that a sufficiently wide neural network can approximate any continuous function on a compact set. The choice of basis is not arbitrary: it encodes prior knowledge about smoothness, periodicity, and locality. This is the mathematical substrate of all modeling.",
+    "aliases": ["approximation", "representation", "basis function", "universal approximation"],
+    "keywords": ["approximation", "basis", "Taylor", "Fourier", "spline", "neural", "universal"]
+  },
+  {
+    "node_id": "math-2",
+    "name": "Dynamical Systems & Differential Equations",
+    "level": 2,
+    "category": "math",
+    "description": "Ordinary differential equations (ODEs) describe finite-dimensional systems: dx/dt = f(x,u). Partial differential equations (PDEs) describe infinite-dimensional systems: heat conduction, beam bending, fluid flow. The qualitative theory of ODEs (Poincaré, Lyapunov) tells us about fixed points, limit cycles, bifurcations, and chaos without solving the equations. Numerical methods: Runge-Kutta for ODEs, finite element / finite difference for PDEs. The state-space representation is the canonical form for control and estimation.",
+    "aliases": ["ODE", "PDE", "dynamical system", "state space", "bifurcation"],
+    "keywords": ["ODE", "PDE", "dynamical", "state", "space", "bifurcation", "chaos", "Runge-Kutta"]
+  },
+  {
+    "node_id": "math-3",
+    "name": "Optimization Theory",
+    "level": 2,
+    "category": "math",
+    "description": "Minimization of a cost function J(x) subject to equality constraints g(x)=0 and inequality constraints h(x)<=0. Convex optimization: the feasible set and objective are convex, guaranteeing global optima. Non-convex optimization: gradient descent, Newton's method, quasi-Newton (BFGS), trust-region. Stochastic gradient descent for large-scale data. The KKT conditions are necessary for optimality in constrained problems. Duality: the Lagrangian dual provides a lower bound on the primal optimum.",
+    "aliases": ["optimization", "convex", "gradient descent", "KKT", "duality"],
+    "keywords": ["optimization", "convex", "gradient", "Newton", "KKT", "duality", "Lagrangian"]
+  },
+  {
+    "node_id": "math-4",
+    "name": "Probability & Statistical Inference",
+    "level": 2,
+    "category": "math",
+    "description": "Modeling uncertainty through probability distributions. Bayes' theorem: posterior = likelihood * prior / evidence. Maximum likelihood estimation finds the parameter that makes the observed data most probable. The Kalman filter is the Bayesian update for linear Gaussian systems. Monte Carlo methods sample from distributions to estimate expectations. The central limit theorem explains why Gaussian approximations work. Entropy, cross-entropy, and KL divergence measure the distance between beliefs.",
+    "aliases": ["probability", "Bayesian", "inference", "Kalman", "Monte Carlo"],
+    "keywords": ["probability", "Bayesian", "likelihood", "posterior", "Kalman", "Monte Carlo", "entropy"]
+  },
+  {
+    "node_id": "math-5",
+    "name": "Spectral Analysis & Decomposition",
+    "level": 2,
+    "category": "math",
+    "description": "Decomposition of signals and operators into orthogonal components. Fourier transform: time-frequency duality. Singular value decomposition (SVD): matrix factorization into singular values and vectors. Eigenvalue decomposition: Ax = lambda x, the fundamental equation of modal analysis. Principal component analysis (PCA): data projection onto maximum-variance directions. Wavelet transform: time-frequency localization. All these are the same idea: find a basis in which the system is diagonal or nearly diagonal.",
+    "aliases": ["Fourier", "SVD", "eigenvalue", "PCA", "spectral", "wavelet"],
+    "keywords": ["Fourier", "SVD", "eigenvalue", "PCA", "spectral", "wavelet", "decomposition"]
+  },
+  {
+    "node_id": "math-6",
+    "name": "Information Theory & Entropy",
+    "level": 2,
+    "category": "math",
+    "description": "Shannon entropy: H(X) = -sum p(x) log p(x). Measures the average information content of a random variable. Mutual information I(X;Y) measures the statistical dependence between variables. Channel capacity is the maximum mutual information achievable over a noisy channel. Kolmogorov complexity is the minimum description length of an object. Minimum description length (MDL) principle balances model fit against model complexity. This is the mathematical foundation of compression, coding, and learning.",
+    "aliases": ["entropy", "information", "Shannon", "mutual information", "Kolmogorov"],
+    "keywords": ["entropy", "information", "Shannon", "mutual", "Kolmogorov", "MDL", "compression"]
+  },
+  {
+    "node_id": "math-7",
+    "name": "Graph Theory & Network Topology",
+    "level": 2,
+    "category": "math",
+    "description": "Nodes and edges as the universal language of relationships. Adjacency matrix, Laplacian matrix, and spectral graph theory. Centrality measures: degree, betweenness, eigenvector, PageRank. Community detection: modularity maximization, spectral clustering. Shortest path and spanning tree. Network flows: max-flow min-cut. Percolation theory: the phase transition at which a giant connected component emerges. All of these are tools for understanding structure, not just control systems but social networks, neural circuits, and material lattices.",
+    "aliases": ["graph", "network", "topology", "PageRank", "spectral clustering"],
+    "keywords": ["graph", "network", "topology", "PageRank", "spectral", "clustering", "percolation"]
+  },
+  {
+    "node_id": "math-8",
+    "name": "Algebraic Structure & Group Theory",
+    "level": 2,
+    "category": "math",
+    "description": "Groups, rings, fields, and vector spaces. The abstract study of symmetry and structure. A group is a set with a binary operation that is closed, associative, has an identity, and has inverses. Representation theory: mapping abstract groups to matrices. Lie groups: continuous symmetries parameterized by real numbers (e.g., SO(3) for rotations). In control, the state transition matrix forms a Lie group. In materials, crystal symmetry groups classify lattice structures. In chemistry, molecular point groups determine spectroscopic selection rules.",
+    "aliases": ["group theory", "algebra", "symmetry", "Lie group", "representation"],
+    "keywords": ["group", "algebra", "symmetry", "Lie", "representation", "SO(3)", "crystal"]
+  },
+  {
+    "node_id": "math-9",
+    "name": "Calculus of Variations & Extremal Principles",
+    "level": 2,
+    "category": "math",
+    "description": "Finding the function that extremizes a functional. Euler-Lagrange equation: d/dt(dL/dx_dot) - dL/dx = 0. Hamilton's principle: the trajectory of a physical system is the one that makes the action integral stationary. Pontryagin's maximum principle for optimal control. The Rayleigh-Ritz method for approximate solutions. All of physics—from mechanics to electromagnetism to general relativity—can be derived from variational principles. Optimization is a special case: the function is discrete, and the functional is a sum.",
+    "aliases": ["variational", "Euler-Lagrange", "Hamilton", "Pontryagin", "extremal"],
+    "keywords": ["variational", "Euler-Lagrange", "Hamilton", "Pontryagin", "action", "extremal"]
+  },
+  {
+    "node_id": "math-10",
+    "name": "Topology & Connectivity",
+    "level": 2,
+    "category": "math",
+    "description": "The study of properties preserved under continuous deformation. Connectedness, compactness, homotopy, and homology. In data analysis: topological data analysis (TDA) extracts shape from point clouds using persistent homology. In control: the controllability matrix's rank is a topological invariant. In materials: the topology of the Fermi surface determines conductive properties. In neural networks: the topology of the loss landscape determines optimization difficulty. Topology is geometry without metric: it cares about connectedness, not distance.",
+    "aliases": ["topology", "TDA", "persistent homology", "homotopy", "connectivity"],
+    "keywords": ["topology", "TDA", "homology", "homotopy", "connectedness", "persistent"]
+  }
+]

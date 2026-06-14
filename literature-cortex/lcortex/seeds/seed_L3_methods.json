@@ -1,0 +1,119 @@
+[
+  {
+    "node_id": "method-1",
+    "name": "Search & Traversal",
+    "level": 3,
+    "category": "method",
+    "description": "The fundamental paradigm of exploring a space of possibilities to find an optimal or satisficing solution. This is not a specific algorithm; it is the meta-structure of all search processes. Includes: exhaustive search (brute force), heuristic search (A*, greedy best-first), informed search (Monte Carlo tree search), and stochastic search (simulated annealing, genetic algorithms). In control: searching the parameter space for stabilizing gains. In optimization: line search, trust region. In machine learning: hyperparameter search (grid, random, Bayesian). In materials: combinatorial search for alloy compositions. The key question is the search space topology: convex, discrete, multi-modal, or high-dimensional. The No Free Lunch theorem states that no search algorithm is universally better than any other across all possible problems.",
+    "aliases": ["search", "traversal", "exploration", "heuristic", "optimization search"],
+    "keywords": ["search", "traversal", "heuristic", "A-star", "Monte Carlo", "simulated annealing", "genetic", "No Free Lunch"]
+  },
+  {
+    "node_id": "method-2",
+    "name": "Recursion & Divide-and-Conquer",
+    "level": 3,
+    "category": "method",
+    "description": "Solving a problem by breaking it into smaller instances of the same problem, solving each independently, and combining the results. The mathematical basis is the Master Theorem for recurrence relations. Divide-and-conquer: merge sort, quicksort, FFT (Cooley-Tukey), Strassen matrix multiplication. Recursion: tree traversal, dynamic programming memoization, fractal generation. In control: hierarchical control where each level delegates to subordinate controllers. In physics: multigrid methods for PDEs where coarse grids initialize fine grids. In biology: recursive gene regulation networks. The depth of recursion is bounded by the problem's inherent structure; unbounded recursion implies infinite regress or self-similarity.",
+    "aliases": ["recursion", "divide-and-conquer", "decomposition", "hierarchical", "subproblem"],
+    "keywords": ["recursion", "divide", "conquer", "Master Theorem", "FFT", "multigrid", "hierarchical"]
+  },
+  {
+    "node_id": "method-3",
+    "name": "Dynamic Programming & Optimal Substructure",
+    "level": 3,
+    "category": "method",
+    "description": "Solving complex problems by exploiting the principle of optimal substructure: an optimal solution contains optimal solutions to subproblems. The Bellman equation is the mathematical formulation: V(s) = max_a [R(s,a) + gamma * V(s')]. This is not just an algorithmic technique; it is the structural property of sequential decision problems. In control: MPC (model predictive control) solves a DP over a receding horizon. In economics: Bellman's principle of optimality for resource allocation. In biology: dynamic programming for sequence alignment (Needleman-Wunsch). In reinforcement learning: value iteration and Q-learning. The curse of dimensionality limits DP to low-dimensional state spaces; approximation (neural fitted Q-iteration) is required for high dimensions.",
+    "aliases": ["dynamic programming", "DP", "Bellman", "optimal substructure", "value iteration"],
+    "keywords": ["dynamic programming", "Bellman", "optimal", "substructure", "MPC", "Q-learning", "value iteration"]
+  },
+  {
+    "node_id": "method-4",
+    "name": "Adaptive Update & Online Learning",
+    "level": 3,
+    "category": "method",
+    "description": "The paradigm of correcting parameters incrementally based on observed error or gradient. This is the universal structure of all learning processes: w <- w + delta_w. LMS, NLMS, RLS, stochastic gradient descent, natural gradient, Adam, and adaptive Kalman gains are all instances differing only in the delta_w formula and the normalization strategy. The mathematics is linear algebra and optimization; the physics is the system's response to perturbation; the engineering is the choice of step size, forgetting factor, and regularization. In control: adaptive gain tuning. In machine learning: neural network training. In biology: Hebbian learning (synaptic plasticity). In economics: adaptive expectations. The fundamental trade-off is convergence speed versus steady-state misadjustment.",
+    "aliases": ["adaptive", "online learning", "gradient update", "parameter correction", "stochastic gradient"],
+    "keywords": ["adaptive", "LMS", "RLS", "gradient", "update", "step size", "forgetting", "Hebbian", "SGD"]
+  },
+  {
+    "node_id": "method-5",
+    "name": "Randomization & Sampling",
+    "level": 3,
+    "category": "method",
+    "description": "Using randomness to solve deterministic problems or approximate intractable integrals. Monte Carlo methods: estimate expectations by sampling. Markov Chain Monte Carlo (MCMC): generate samples from complex distributions via random walks. Stochastic gradient descent: approximate the full gradient by a random minibatch. Randomized algorithms: QuickSort with random pivot, randomized rounding for integer programming. In physics: Metropolis algorithm for statistical mechanics. In control: dithering (high-frequency noise injection to overcome stiction). In optimization: simulated annealing and genetic algorithms. The power of randomness is that it escapes local optima and handles high-dimensional spaces where deterministic methods fail. The cost is variance: the answer is approximate, and convergence is probabilistic.",
+    "aliases": ["randomization", "Monte Carlo", "MCMC", "sampling", "stochastic", "probabilistic"],
+    "keywords": ["randomization", "Monte Carlo", "MCMC", "sampling", "stochastic", "Metropolis", "dithering"]
+  },
+  {
+    "node_id": "method-6",
+    "name": "Feedback & Causal Loop",
+    "level": 3,
+    "category": "method",
+    "description": "The paradigm of acting on the error between desired and actual output. This is not limited to control systems; it is the structure of all self-regulating processes. In control: PID, state feedback, H2/Hinf. In biology: negative feedback (insulin-glucose, predator-prey). In economics: central bank interest rate adjustment, supply-demand equilibrium. In ecology: carrying capacity regulation. The fundamental trade-off is the Bode sensitivity integral: you cannot suppress disturbance at all frequencies simultaneously. High gain reduces steady-state error but amplifies noise and risks instability. The Nyquist criterion and root locus are the stability analysis tools. The mathematical substrate is complex analysis and the argument principle.",
+    "aliases": ["feedback", "causal loop", "self-regulation", "error-driven", "negative feedback"],
+    "keywords": ["feedback", "PID", "causal", "loop", "self-regulation", "Bode", "Nyquist", "sensitivity"]
+  },
+  {
+    "node_id": "method-7",
+    "name": "Feedforward & Predictive Compensation",
+    "level": 3,
+    "category": "method",
+    "description": "The paradigm of acting on a predicted disturbance before it affects the system. This requires a reference signal that is correlated with and causally prior to the disturbance. In control: FxLMS, where the reference is the primary noise source and the secondary path is the actuator-to-sensor transfer function. In manufacturing: pre-compensating thermal expansion by predicting temperature rise. In meteorology: numerical weather prediction guiding agricultural decisions. In biology: anticipatory homeostasis (feedforward thermoregulation). The key requirement is that the reference must be causally prior and sufficiently correlated. If the reference is delayed or weakly correlated, feedforward degrades to noisy open-loop control. The mathematical substrate is Wiener filtering and causal prediction theory.",
+    "aliases": ["feedforward", "predictive", "anticipatory", "causal prediction", "pre-compensation"],
+    "keywords": ["feedforward", "predictive", "anticipatory", "Wiener", "causal", "pre-compensation", "reference"]
+  },
+  {
+    "node_id": "method-8",
+    "name": "Model-Based Simulation & Prediction",
+    "level": 3,
+    "category": "method",
+    "description": "Using a mathematical or computational model to simulate future behavior and compute optimal actions. This is the paradigm of the digital twin: a virtual model running in parallel with the physical system. In control: MPC solves an optimization over a receding horizon. In physics: molecular dynamics predicts material behavior; CFD predicts fluid flow. In chemistry: reaction kinetics models predict yield. In climate: GCMs predict temperature trends. In epidemiology: SIR models predict disease spread. The accuracy is bounded by model fidelity and initial condition uncertainty. The method is only as good as the model; if the model is wrong, the prediction is wrong regardless of computational power. The mathematical substrate is differential equations and numerical analysis.",
+    "aliases": ["simulation", "digital twin", "model-based", "prediction", "forecasting"],
+    "keywords": ["simulation", "digital twin", "MPC", "model", "forecast", "molecular dynamics", "CFD", "SIR"]
+  },
+  {
+    "node_id": "method-9",
+    "name": "Data-Driven Function Approximation",
+    "level": 3,
+    "category": "method",
+    "description": "Learning a direct input-output mapping from data without explicit physical modeling. This is the paradigm of universal approximation: a sufficiently flexible function class can represent any continuous mapping. Neural networks, Gaussian processes, support vector machines, kernel methods, and decision trees are all instances differing in the function class, regularization strategy, and optimization procedure. The universal approximation theorem guarantees representational capacity; generalization guarantees do not. The bias-variance trade-off and the curse of dimensionality set the fundamental limits. In control: neural network compensators. In materials: machine learning interatomic potentials. In biology: genotype-to-phenotype prediction. The key distinction from model-based methods: no conservation laws, no symmetry constraints—purely statistical.",
+    "aliases": ["machine learning", "neural network", "data-driven", "function approximation", "black box"],
+    "keywords": ["machine learning", "neural", "network", "Gaussian", "SVM", "kernel", "overfitting", "generalization"]
+  },
+  {
+    "node_id": "method-10",
+    "name": "Spectral Decomposition & Frequency Analysis",
+    "level": 3,
+    "category": "method",
+    "description": "Decomposing a signal or operator into orthogonal frequency components and processing each independently. This is the paradigm of diagonalization: find a basis in which the system is decoupled. Fourier transform, wavelet transform, SVD, PCA, and modal analysis are all instances. In vibration control: each tonal harmonic is a separate narrowband channel (SHR). In image processing: frequency-domain filtering. In materials: phonon density of states from lattice dynamics. In quantum mechanics: energy eigenstate decomposition. The method assumes separability; if modes are coupled (nonlinear modal interaction), the decomposition breaks down. The mathematical substrate is harmonic analysis and spectral theory of linear operators.",
+    "aliases": ["spectral", "frequency decomposition", "modal", "harmonic", "Fourier", "PCA", "SVD"],
+    "keywords": ["spectral", "frequency", "modal", "harmonic", "Fourier", "wavelet", "PCA", "SVD", "phonon"]
+  },
+  {
+    "node_id": "method-11",
+    "name": "Dimensionality Reduction & Coarse-Graining",
+    "level": 3,
+    "category": "method",
+    "description": "Reducing the number of degrees of freedom while preserving essential information. This is the paradigm of abstraction: discarding detail to reveal structure. PCA, autoencoders, t-SNE, UMAP are computational instances. Coarse-graining in physics replaces many degrees of freedom with a few effective parameters (renormalization group). In control: model order reduction for real-time implementation. In materials: effective medium theory. In biology: gene expression clustering. The key question is epistemic: what information is essential and what is discardable? This is not a technical optimization; it is a decision about what matters. The mathematical substrate is linear algebra (subspaces), information theory (compression), and topology (persistent homology).",
+    "aliases": ["PCA", "autoencoder", "coarse-graining", "dimensionality reduction", "renormalization"],
+    "keywords": ["PCA", "autoencoder", "t-SNE", "UMAP", "coarse-graining", "renormalization", "dimensionality", "homology"]
+  },
+  {
+    "node_id": "method-12",
+    "name": "Parallelism & Concurrent Execution",
+    "level": 3,
+    "category": "method",
+    "description": "Executing multiple computations simultaneously to reduce wall-clock time. This is the paradigm of spatial decomposition: the problem is split into independent or weakly dependent subproblems that execute on different processors. MapReduce: data-parallel batch processing. MPI: message-passing for distributed memory. GPU: SIMT (single instruction, multiple threads) for matrix operations. In control: FPGA parallel FIR filter banks. In physics: domain decomposition for PDEs. In machine learning: data-parallel training (distributed SGD). The fundamental limit is Amdahl's law: speedup is bounded by the sequential fraction. The cost is communication overhead and synchronization barriers. The mathematical substrate is parallel graph algorithms and schedulers.",
+    "aliases": ["parallelism", "concurrent", "distributed", "MapReduce", "MPI", "GPU", "SIMT"],
+    "keywords": ["parallel", "concurrent", "MapReduce", "MPI", "GPU", "SIMT", "Amdahl", "distributed"]
+  },
+  {
+    "node_id": "method-13",
+    "name": "Multiscale & Multi-Resolution Coupling",
+    "level": 3,
+    "category": "method",
+    "description": "Modeling systems that span multiple spatial or temporal scales by coupling models at different resolutions. This is the paradigm of hierarchical modeling: each level abstracts the level below. In materials: atomistic (DFT) -> mesoscopic (phase field) -> continuum (FEM). In control: fast inner loop (current) -> medium loop (velocity) -> slow outer loop (position). In biology: molecular -> cellular -> tissue -> organ. In fluid dynamics: DNS -> LES -> RANS. The coupling is not one-way: the coarse model constrains the fine model, and the fine model feeds back corrections (heterogeneous multiscale method). The mathematical substrate is homogenization theory, asymptotic analysis, and scale separation. The physics is that different phenomena dominate at different scales.",
+    "aliases": ["multiscale", "multi-resolution", "hierarchical", "coupling", "homogenization"],
+    "keywords": ["multiscale", "hierarchical", "coupling", "homogenization", "scale", "DFT", "FEM", "DNS", "LES"]
+  }
+]

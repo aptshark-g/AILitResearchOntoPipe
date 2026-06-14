@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "literature-cortex"
+version = "0.1.0"
+description = "AI-powered literature research workflow with knowledge graph, structural analogy, and double-loop learning"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Literature Cortex Contributors"}
+]
+keywords = ["literature-review", "knowledge-graph", "academic-research", "paper-analysis"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    "click>=8.1",
+    "requests>=2.31",
+    "arxiv>=2.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+lcortex = "lcortex.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/literature-cortex/literature-cortex"
+Documentation = "https://github.com/literature-cortex/literature-cortex"
+
+[tool.setuptools.packages.find]
+include = ["lcortex*"]
+
+[tool.setuptools.package-data]
+lcortex = ["seeds/**/*", "seeds/**/*.json", "seeds/**/*.md", "prompts/**/*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

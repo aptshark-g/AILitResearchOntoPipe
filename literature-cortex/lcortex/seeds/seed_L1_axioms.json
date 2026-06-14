@@ -1,0 +1,110 @@
+[
+  {
+    "node_id": "axiom-1",
+    "name": "Set Theory & ZFC Foundation",
+    "level": 1,
+    "category": "axiom",
+    "description": "Zermelo-Fraenkel with Choice (ZFC) is the de facto foundation of modern mathematics. All mathematical objects are sets. The axiom of choice guarantees that a Cartesian product of non-empty sets is non-empty. The axiom of infinity asserts the existence of an infinite set. From these, natural numbers, real numbers, functions, and spaces are constructed. This is not a physics assumption; it is the ontological commitment that mathematical objects exist as sets. Alternative foundations: NF (New Foundations), MK (Morse-Kelley), and category-theoretic foundations (ETCS).",
+    "aliases": ["ZFC", "set theory", "axiom of choice", "foundation"],
+    "keywords": ["ZFC", "set", "axiom", "choice", "foundation", "ontology", "ETCS"]
+  },
+  {
+    "node_id": "axiom-2",
+    "name": "Peano Arithmetic & Induction",
+    "level": 1,
+    "category": "axiom",
+    "description": "The natural numbers are defined by: 0 exists; every number has a successor; 0 is not a successor; different numbers have different successors; induction works. The induction axiom is the engine of mathematical proof: if a property holds for 0 and is preserved under successor, it holds for all natural numbers. This is not merely about counting; it is the foundation of recursive construction, algorithmic termination proofs, and structural induction. In computation, it maps to well-founded recursion. In physics, it underlies discrete models of time and space.",
+    "aliases": ["Peano", "induction", "natural numbers", "successor", "recursion"],
+    "keywords": ["Peano", "induction", "natural", "successor", "recursion", "well-founded"]
+  },
+  {
+    "node_id": "axiom-3",
+    "name": "Law of Excluded Middle & Proof Paradigms",
+    "level": 1,
+    "category": "axiom",
+    "description": "In classical logic, every proposition is either true or false (P ∨ ¬P). This is the basis of proof by contradiction and the decidability of formal systems. Intuitionistic logic rejects LEM: a proposition is true only if there is a constructive proof. This split defines two mathematical cultures: classical mathematics (most of analysis, algebra, topology) and constructive mathematics (type theory, computer science, automated theorem proving). The Brouwer-Hilbert controversy (1920s) was the foundational crisis. In practice, most engineering uses classical logic; computer verification leans constructive.",
+    "aliases": ["LEM", "excluded middle", "intuitionism", "constructivism", "classical logic"],
+    "keywords": ["LEM", "excluded middle", "intuitionism", "constructivism", "proof", "Brouwer", "Hilbert"]
+  },
+  {
+    "node_id": "axiom-4",
+    "name": "Continuum Hypothesis & Cardinality",
+    "level": 1,
+    "category": "axiom",
+    "description": "Georg Cantor proved that the real numbers are uncountably infinite (cardinality of the continuum, c), while the rationals are countably infinite (aleph-0). The continuum hypothesis (CH) asserts that there is no cardinality between aleph-0 and c. Gödel (1940) and Cohen (1963) proved that CH is independent of ZFC: it can be neither proved nor disproved within standard set theory. This is the paradigmatic example of an undecidable proposition. It tells us that mathematical reality is not fully determined by axioms—there are multiple consistent mathematical universes.",
+    "aliases": ["continuum hypothesis", "Cantor", "cardinality", "aleph", "uncountable"],
+    "keywords": ["continuum", "Cantor", "cardinality", "aleph", "uncountable", "Gödel", "Cohen"]
+  },
+  {
+    "node_id": "axiom-5",
+    "name": "Gödel's Incompleteness & Formal Limits",
+    "level": 1,
+    "category": "axiom",
+    "description": "In any sufficiently powerful formal system (one that can express arithmetic), there exist true statements that cannot be proved within the system (Gödel's first incompleteness theorem). Moreover, the system cannot prove its own consistency (second theorem). This is not a limitation of human ingenuity; it is a structural limitation of formal systems. It applies to ZFC, to any AI reasoning system, and to any formal model of physical reality. The corollary: any complete description of a system must be outside that system. This is why meta-theory (L0) is necessary.",
+    "aliases": ["Gödel", "incompleteness", "formal limit", "provability"],
+    "keywords": ["Gödel", "incompleteness", "formal", "provability", "consistency", "meta"]
+  },
+  {
+    "node_id": "axiom-6",
+    "name": "Euclid's Parallel Postulate & Geometric Freedom",
+    "level": 1,
+    "category": "axiom",
+    "description": "In Euclidean geometry, given a line and a point not on it, there is exactly one parallel line through the point. In hyperbolic geometry (Bolyai, Lobachevsky), there are infinitely many. In elliptic geometry (Riemann), there are none. The choice of geometry is not empirical; it is a modeling decision. General relativity uses Riemannian geometry (curved spacetime). Molecular biology uses Euclidean distances in sequence space. Machine learning uses hyperbolic geometry for hierarchical data. The parallel postulate is the paradigmatic example of an axiom whose negation produces a different, equally valid mathematical world.",
+    "aliases": ["Euclid", "parallel postulate", "non-Euclidean", "hyperbolic", "elliptic"],
+    "keywords": ["Euclid", "parallel", "hyperbolic", "elliptic", "Riemann", "geometry", "curvature"]
+  },
+  {
+    "node_id": "axiom-7",
+    "name": "Category Theory & Structuralism",
+    "level": 1,
+    "category": "axiom",
+    "description": "The foundational program initiated by Eilenberg and Mac Lane (1945): mathematics is not about objects but about relationships (morphisms). A category consists of objects and arrows between them, satisfying associativity and identity. Functors map categories to categories; natural transformations map functors to functors. This is the structuralist paradigm: the essence of a mathematical object is its network of relationships, not its internal constitution. In computer science: type theory, functional programming (Haskell), and database schemas are categorical. In physics: topological quantum field theories are functors from cobordism categories to vector spaces.",
+    "aliases": ["category theory", "structuralism", "functor", "morphism", "Eilenberg-Mac Lane"],
+    "keywords": ["category", "functor", "morphism", "structuralism", "Eilenberg", "type theory"]
+  },
+  {
+    "node_id": "axiom-8",
+    "name": "Homotopy Type Theory & Univalent Foundations",
+    "level": 1,
+    "category": "axiom",
+    "description": "Voevodsky's univalent foundations (2010): equality is not identity but equivalence. Two objects are equal if they are isomorphic in all relevant respects. This is the univalence axiom: (A ≡ B) ≃ (A = B). In HoTT, types are spaces, terms are points, and equality proofs are paths. The fundamental group of a type captures its topological structure. This is both a new foundation of mathematics and a programming language (proofs are programs, types are spaces). It unifies logic, topology, and computation. In AI, it provides a formal framework for reasoning about equivalence classes and approximate equality.",
+    "aliases": ["HoTT", "univalence", "Voevodsky", "homotopy", "type theory"],
+    "keywords": ["HoTT", "univalence", "Voevodsky", "homotopy", "isomorphism", "path", "equivalence"]
+  },
+  {
+    "node_id": "axiom-9",
+    "name": "Turing Computability & Effective Procedure",
+    "level": 1,
+    "category": "axiom",
+    "description": "A function is computable if and only if a Turing machine can compute it (Church-Turing thesis). This is not a theorem; it is a hypothesis about the nature of computation. It asserts that any algorithm, in any formalism (lambda calculus, recursive functions, register machines), can be simulated by a Turing machine. The halting problem is undecidable: no algorithm can determine whether an arbitrary program halts. This sets the boundary of what is mechanically knowable. In AI: any reasoning system is bounded by computability. In physics: the Bekenstein bound suggests that any physical system has finite computational capacity.",
+    "aliases": ["Turing", "Church-Turing", "computability", "halting problem", "effective procedure"],
+    "keywords": ["Turing", "Church-Turing", "computable", "halting", "algorithm", "undecidable"]
+  },
+  {
+    "node_id": "axiom-10",
+    "name": "Symmetry & Conservation (Noether's Theorem)",
+    "level": 1,
+    "category": "axiom",
+    "description": "Emmy Noether (1918): every differentiable symmetry of a physical system corresponds to a conservation law. Time-translation symmetry → energy conservation. Spatial-translation symmetry → momentum conservation. Rotational symmetry → angular momentum conservation. This is not a physics axiom in the narrow sense; it is a theorem in the calculus of variations that applies to any Lagrangian system. In materials: crystal symmetry groups classify lattice structures. In chemistry: molecular point groups determine spectroscopic selection rules. In control: the symmetry of a system's equations determines its controllability decomposition. Symmetry is the bridge between mathematics and physical law.",
+    "aliases": ["Noether", "symmetry", "conservation", "Lagrangian", "invariance"],
+    "keywords": ["Noether", "symmetry", "conservation", "Lagrangian", "invariance", "translation", "rotation"]
+  },
+  {
+    "node_id": "axiom-11",
+    "name": "Linearization & Local Approximation",
+    "level": 1,
+    "category": "axiom",
+    "description": "Every smooth function is locally linear: f(x) ≈ f(x0) + f'(x0)(x-x0). This is the Taylor expansion to first order. It is the justification for calculus, differential equations, and perturbation theory. The radius of convergence determines the domain of validity. Beyond the radius, the linear approximation lies. This is not merely a computational convenience; it is the epistemological basis for all local analysis. In physics: small-signal analysis of circuits, linearized stability of dynamical systems. In optimization: gradient descent assumes local linearity. In machine learning: neural network training relies on local gradient information.",
+    "aliases": ["Taylor", "linearization", "local approximation", "perturbation", "small-signal"],
+    "keywords": ["Taylor", "linearization", "local", "approximation", "perturbation", "gradient"]
+  },
+  {
+    "node_id": "axiom-12",
+    "name": "Conservation & Closure",
+    "level": 1,
+    "category": "axiom",
+    "description": "In any closed system, certain quantities are invariant. Energy, momentum, charge, probability, and information are conserved under appropriate conditions. Dissipation is not destruction; it is transfer to an unobserved reservoir. This is the physical basis for Lyapunov function construction: the energy of a stable system cannot increase. In probability: normalization (∫ p(x)dx = 1) is conservation of total probability. In information: unitarity in quantum mechanics conserves information. In economics: accounting identities (savings = investment) are conservation laws. The closure assumption is always an approximation: no system is truly closed.",
+    "aliases": ["conservation", "closure", "invariant", "Lyapunov", "dissipation"],
+    "keywords": ["conservation", "closure", "invariant", "Lyapunov", "dissipation", "unitarity"]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "unexplainability": {
+    "threshold_default": 0.5,
+    "threshold_cold_start": 0.6,
+    "cold_start_node_count": 10,
+    "l1_l4_weight": 0.3,
+    "l5_l6_weight": 0.7
+  },
+  "double_loop_guard": {
+    "max_impact_ratio": 0.3,
+    "consecutive_trigger_limit": 2,
+    "require_two_conditions": true,
+    "impact_estimation_window": 5
+  },
+  "retrieval": {
+    "max_retrieval_candidates": 20
+  }
+}
